@@ -29,7 +29,7 @@ const TodoForm = ({setTodos}) => {
                 <input type="text" placeholder="제목" name='title' />
                 <input type="text" placeholder="내용" name='content' />
 
-                <button type="submit">등록</button>
+                <button type="submit">추가</button>
             </form>
         </div>
     )
