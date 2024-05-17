@@ -1,9 +1,11 @@
+import React from 'react'
 import Layout from "./components/Layout"
+import TodoContainer from "./components/todo/TodoContainer";
 
 const App = () => {
   return (
     <Layout>
-      <h1>App</h1>
+      <TodoContainer />
     </Layout>
   );
 };
