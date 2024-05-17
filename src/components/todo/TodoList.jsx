@@ -1,8 +1,17 @@
 import React from 'react'
 
-const TodoList = () => {
+const TodoList = ({ title, todos }) => {
     return (
-        <div>TodoList</div>
+        <div>
+            <h2 className='todo-list-title'>{title}</h2>
+            <ul>
+                {todos.map((todo) => (
+                    <li key={todo.id}>
+                        <TodoItem todo={todo}/>
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
